@@ -1,65 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Syeda Rameen Sherazi — Portfolio</title>
-  <meta name="description" content="Portfolio of Syeda Rameen Sherazi">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syeda Rameen - Urban Planner Portfolio</title>
+    <meta name="description" content="Professional urban planner specializing in master planning, habitat assessment, eco-tourism planning, and sustainable urban design.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Syeda Rameen - Urban Planner Portfolio">
+    <meta property="og:description" content="Professional urban planner specializing in sustainable city development and environmental planning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://syeda-rameen1.github.io">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="#home" class="logo">RS</a>
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-leaf"></i> Syeda Rameen
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
 
-  <main id="home" class="hero">
-    <h1>Syeda Rameen Sherazi</h1>
-    <p class="tagline">Urban Planner | GIS Analyst</p>
-    <div class="cta">
-      <a href="#projects" class="btn">See my work</a>
-     <a href="assets/CV.pdf" class="btn ghost">Download CV</a>
-    </div>
-  </main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in-up">Syeda Rameen</h1>
+            <p class="subtitle fade-in-up">Urban Planner & Sustainable Development Specialist</p>
+            <p class="description fade-in-up">
+                Creating sustainable communities through innovative urban planning, environmental stewardship, 
+                and community-centered design solutions that harmonize development with nature.
+            </p>
+            <a href="#projects" class="cta-button fade-in-up">Explore My Work</a>
+        </div>
+    </section>
 
-  <section id="about" class="section">
-    <h2>About</h2>
-    <p>
-      Urban planner and GIS analyst with experience in master planning, habitat assessment,
-      eco-tourism strategies, and landscape/urban design. Skilled in data analysis and reporting.
-    </p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about/profile.jpg" alt="Syeda Rameen - Urban Planner" 
+                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22><rect width=%22300%22 height=%22300%22 fill=%22%238fbc8f%22/><text x=%22150%22 y=%22150%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22Arial%22 font-size=%2260%22 fill=%22white%22>👤</text></svg>'">
+                </div>
+                <div class="about-text">
+                    <h3>Passionate Urban Planning Professional</h3>
+                    <p>
+                        With extensive experience in urban planning and sustainable development, I specialize in creating 
+                        comprehensive planning solutions that balance environmental conservation with community needs. 
+                        My expertise spans across multiple disciplines, from master planning to ecological assessment.
+                    </p>
+                    <p>
+                        I believe in the power of thoughtful planning to create resilient, sustainable communities 
+                        that respect both human needs and environmental integrity. My approach combines technical 
+                        expertise with community engagement to deliver innovative solutions for complex urban challenges.
+                    </p>
+                    
+                    <div class="skills">
+                        <h4>Core Competencies</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-city"></i>
+                                <h5>Master Planning</h5>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-leaf"></i>
+                                <h5>Environmental Assessment</h5>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mountain"></i>
+                                <h5>Eco-tourism Planning</h5>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line"></i>
+                                <h5>Data Analysis</h5>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <h5>Urban Design</h5>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-building"></i>
+                                <h5>Architectural Planning</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li>Master Plan for Astore and Chilas Cities</li>
-      <li>Rural Habitat Assessment & Planning</li>
-      <li>Sustainable Management Plan for Khunjerab and more</li>
-      <li>Strategic Land-Use Plan for Punjab Districts</li>
-      <li>Urban Farming, Park Design, and more</li>
-    </ul>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Master Planning Projects -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/master-planning-1.jpg" alt="Master Planning Project" 
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22><rect width=%22400%22 height=%22250%22 fill=%22%234a7c59%22/><text x=%22200%22 y=%22125%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22white%22>🏙️</text></svg>'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/master-planning/comprehensive-city-plan.pdf" class="project-link">View PDF</a>
+                                <a href="#" class="project-link">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Comprehensive City Master Plan</h3>
+                        <p>
+                            Development of a 20-year master plan for sustainable urban growth, incorporating 
+                            green infrastructure, mixed-use development, and transportation networks.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Master Planning</span>
+                            <span class="tag">Zoning</span>
+                            <span class="tag">Transportation</span>
+                        </div>
+                    </div>
+                </div>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:srameensherazi@gmail.com">srameensherazi@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/rameen-sherazi/">rameen-sherazi</a></li>
-      <li>GitHub: <a href="https://github.com/syeda-rameen1">syeda-rameen1</a></li>
-    </ul>
-  </section>
+                <!-- Habitat Assessment -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/habitat-assessment-1.jpg" alt="Habitat Assessment Project" 
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22><rect width=%22400%22 height=%22250%22 fill=%22%238fbc8f%22/><text x=%22200%22 y=%22125%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22white%22>🦅</text></svg>'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/habitat-assessment/wildlife-corridor-study.pdf" class="project-link">View PDF</a>
+                                <a href="#" class="project-link">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Wildlife Corridor Assessment</h3>
+                        <p>
+                            Comprehensive habitat assessment for urban wildlife corridors, including biodiversity 
+                            mapping, migration pattern analysis, and conservation recommendations.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Habitat Assessment</span>
+                            <span class="tag">Biodiversity</span>
+                            <span class="tag">Conservation</span>
+                        </div>
+                    </div>
+                </div>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Syeda Rameen Sherazi</p>
-  </footer>
+                <!-- Eco-tourism Planning -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/eco-tourism-1.jpg" alt="Eco-tourism Planning Project" 
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22><rect width=%22400%22 height=%22250%22 fill=%22%232c5530%22/><text x=%22200%22 y=%22125%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22white%22>🌲</text></svg>'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/eco-tourism/sustainable-tourism-plan.pdf" class="project-link">View PDF</a>
+                                <a href="#" class="project-link">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sustainable Eco-tourism Development</h3>
+                        <p>
+                            Strategic planning for eco-tourism development that balances visitor experience 
+                            with environmental protection and community benefits.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Eco-tourism</span>
+                            <span class="tag">Sustainability</span>
+                            <span class="tag">Community Planning</span>
+                        </div>
+                    </div>
+                </div>
 
-  <script src="script.js"></script>
+                <!-- Report Writing & Data Analysis -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/data-analysis-1.jpg" alt="Data Analysis Project" 
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22><rect width=%22400%22 height=%22250%22 fill=%22%234a7c59%22/><text x=%22200%22 y=%22125%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22white%22>📊</text></svg>'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/report-writing/urban-growth-analysis.pdf" class="project-link">View PDF</a>
+                                <a href="#" class="project-link">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Urban Growth Impact Analysis</h3>
+                        <p>
+                            Comprehensive data analysis and reporting on urban sprawl patterns, 
+                            demographic trends, and infrastructure capacity planning.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Report Writing</span>
+                            <span class="tag">Urban Growth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urban Design & Landscape Planning -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/urban-design-1.jpg" alt="Urban Design Project" 
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22><rect width=%22400%22 height=%22250%22 fill=%22%238fbc8f%22/><text x=%22200%22 y=%22125%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22white%22>🏞️</text></svg>'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/urban-design/green-corridor-design.pdf" class="project-link">View PDF</a>
+                                <a href="#" class="project-link">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Green Corridor Design</h3>
+                        <p>
+                            Design of urban green corridors integrating recreational spaces, 
+                            stormwater management, and biodiversity conservation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Urban Design</span>
+                            <span class="tag">Landscape Planning</span>
+                            <span class="tag">Green Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architectural Design & Planning -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/architectural-1.jpg" alt="Architectural Planning Project" 
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22><rect width=%22400%22 height=%22250%22 fill=%22%232c5530%22/><text x=%22200%22 y=%22125%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22Arial%22 font-size=%2240%22 fill=%22white%22>🏗️</text></svg>'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/architectural-design/mixed-use-development.pdf" class="project-link">View PDF</a>
+                                <a href="#" class="project-link">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sustainable Mixed-Use Development</h3>
+                        <p>
+                            Architectural planning for sustainable mixed-use development featuring 
+                            energy-efficient design, green building practices, and community spaces.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Architectural Design</span>
+                            <span class="tag">Mixed-Use</span>
+                            <span class="tag">Sustainable Design</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Collaborate</h3>
+                    <p>
+                        I'm always interested in discussing new projects and opportunities 
+                        in urban planning and sustainable development. Let's connect!
+                    </p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            syeda.rameen@example.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +1 (555) 123-4567
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong><br>
+                            Your City, Country
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong><br>
+                            <a href="https://linkedin.com/in/syeda-rameen" target="_blank">linkedin.com/in/syeda-rameen</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <h3>Send a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/syeda-rameen" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/syeda-rameen1" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:syeda.rameen@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://twitter.com/syeda_rameen" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Syeda Rameen. All rights reserved. | Urban Planning Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
