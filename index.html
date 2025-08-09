@@ -34,6 +34,9 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="CV/CV-syeda Rameen.pdf" class="nav-link cv-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> CV
+                </a></li>
             </ul>
         </div>
     </nav>
@@ -47,7 +50,12 @@
                 Creating sustainable communities through innovative urban planning, environmental stewardship, 
                 and community-centered design solutions that harmonize development with nature.
             </p>
-            <a href="#projects" class="cta-button fade-in-up">Explore My Work</a>
+            <div class="hero-buttons fade-in-up">
+                <a href="#projects" class="cta-button">Explore My Work</a>
+                <a href="CV/CV-syeda Rameen.pdf" class="cta-button secondary" target="_blank">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
         </div>
     </section>
 
@@ -72,6 +80,15 @@
                         that respect both human needs and environmental integrity. My approach combines technical 
                         expertise with community engagement to deliver innovative solutions for complex urban challenges.
                     </p>
+                    
+                    <div class="about-actions">
+                        <a href="CV/CV-syeda Rameen.pdf" class="cv-download-btn" target="_blank">
+                            <i class="fas fa-download"></i> Download Full CV
+                        </a>
+                        <a href="#contact" class="contact-btn">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
                     
                     <div class="skills">
                         <h4>Core Competencies</h4>
@@ -318,7 +335,7 @@
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contact-form">
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                     <h3>Send a Message</h3>
                     <div class="form-group">
                         <label for="name">Full Name *</label>
@@ -327,7 +344,7 @@
                     
                     <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="_replyto" required>
                     </div>
                     
                     <div class="form-group">
@@ -339,6 +356,9 @@
                         <label for="message">Message *</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
+                    
+                    <!-- Formspree honeypot field (hidden) -->
+                    <input type="text" name="_gotcha" style="display:none" />
                     
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>

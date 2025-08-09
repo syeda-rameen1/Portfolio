@@ -152,8 +152,18 @@ body {
     line-height: 1.8;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
 .cta-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     background: var(--accent-color);
     color: var(--primary-color);
     padding: 15px 30px;
@@ -168,6 +178,66 @@ body {
     transform: translateY(-3px);
     box-shadow: var(--shadow-hover);
     background: var(--white);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.cta-button.secondary:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.cv-link {
+    color: var(--accent-color) !important;
+    font-weight: 600;
+}
+
+.cv-link:hover {
+    color: var(--white) !important;
+}
+
+.about-actions {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.cv-download-btn,
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cv-download-btn {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.cv-download-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.contact-btn {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.contact-btn:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+    transform: translateY(-2px);
 }
 
 /* Sections */
@@ -539,6 +609,17 @@ body {
 
     .section {
         padding: 60px 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-actions {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 

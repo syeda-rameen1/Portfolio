@@ -11,7 +11,7 @@
 2. Click on **Settings** tab
 3. Scroll down to **Pages** section
 4. Under **Source**, select "Deploy from a branch"
-5. Choose **main** branch and **/ (root)** folder
+5. Choose **main** branch
 6. Click **Save**
 
 ### Step 3: Access Your Portfolio
