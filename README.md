@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Urban Planner Portfolio
 
 A professional portfolio website showcasing urban planning expertise and projects.
@@ -112,6 +111,3 @@ This portfolio template is open source and available under the MIT License.
 ---
 
 **Made for Urban Planning Professionals** 🌿
-=======
-# portfolio
->>>>>>> b466032576fd537d1807ca024f96f536b25b0733
