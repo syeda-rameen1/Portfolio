@@ -445,6 +445,27 @@ body {
     font-size: 0.8rem;
     font-weight: 500;
 }
+/* Small thumbnail images for project titles */
+.project-content h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-thumb {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex: 0 0 28px;
+}
+
+@media (min-width: 768px) {
+    .project-thumb {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+    }
 
 /* Contact Section */
 .contact {
