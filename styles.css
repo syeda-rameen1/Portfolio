@@ -701,3 +701,39 @@ body {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+/* ---- Skills grid images (scoped, safe) ---- */
+.skills-grid .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* exact size image instead of icon */
+.skill-icon {
+    width: 56px;   /* pick your exact size */
+    height: 56px;  /* keep width=height */
+    object-fit: contain;  /* no cropping; preserves image proportions */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* optional: circular badge behind the image to mimic the icon vibe */
+.skill-icon-badge {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(74,124,89,0.08); /* subtle themed background */
+    display: grid;
+    place-items: center;
+    margin-bottom: 0.5rem;
+    box-shadow: var(--shadow);
+}
+
+/* keep typographic spacing the same */
+.skills-grid .skill-item h5 {
+    margin-top: 0.25rem;
+}
+
+/* make sure old icon styles don't apply */
+.skill-item i { display: none !important; }
